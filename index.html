@@ -18,5 +18,56 @@
                               <div class='brand-icon'></div>div>
                               <div class='brand-name'>WS Evaluator</div>div>
                 </div>div>
-</body></title>
-  </head>
+                <nav class='nav-group'>
+                              <div class='nav-item active' data-screen='screen-dashboard' id='nav-dashboard'><span>DASHBOARD</span></div>div>
+                            <div class='nav-item' data-screen='screen-provas' id='nav-provas'><span>PROVAS</span></div>div>
+                            <div class='nav-item' data-screen='screen-cis' id='nav-cis'><span>CIS</span></div>div>
+                            <div class='nav-item' data-screen='screen-avaliacao' id='nav-avaliacao'><span>AVALIACAO</span></div>div>
+                            <div class='nav-item' data-screen='screen-relatorios' id='nav-relatorios'><span>RELATORIOS</span></div>div>
+                </nav>nav>
+      </aside>aside>
+    <main id='app-container'>
+            <section id='screen-dashboard' class='screen active'>
+                        <h1>Painel de Controle</h1>
+                        <div class='grid-stats'>
+                                        <div class='stat-card'><div class='stat-value'>24</div>div><div class='stat-label'>Provas</div>div></div>div>
+                                        <div class='stat-card'><div class='stat-value'>12</div>div><div class='stat-label'>CIS</div>div></div>div>
+                        </div>div>
+                        <div class='chart-container'><canvas id='chart-radar-global'></canvas>canvas></div>div>
+            </section>section>
+            <section id='screen-provas' class='screen'>
+                        <h1>Gerar Prova</h1>
+                        <div class='card'>
+                                        <div class='form-group'>
+                                                            <label>Link de Referencia</label>
+                                                            <inplaceholder='ge.globo.com'>
+                                                            </inplaceholder>div>
+                                                      <div class='form-group'>
+                                                                        <label>Modulo</label>
+                                                                      <select id='prova-modulo'></select>select>
+                                                      </div>div>
+                                                    <button class='btn btn-primary' id='btn-gerar-prova'>GERAR PDF</button>button>
+                                        </div>div>
+                        </div>section>
+                <section id='screen-avaliacao' class='screen'>
+                        <h1>Avaliacao</h1>
+                        <div class='card'>
+                                    <div id='drop-zone' style='border:2px dashed #ccc; padding:40px; text-align:center;'>Upload CIS</div>div>
+                                    <input type='file' id='input-cis-file' style='display:none;'>
+                                    <div id='avaliacao-metadata' style='display:none;'>
+                                                    <button class='btn btn-primary' id='btn-processar-avaliacao'>PROCESSAR</button>button>
+                                    </div>div>
+                        </div>div>
+                </section>section>
+                <section id='screen-relatorios' class='screen'>
+                        <h1>Relatorios</h1>
+                        <div id='results-display' style='display:none;'>
+                                     <div id='res-total-points'></div>div>
+                                     <canvas id='chart-radar-result'></canvas>canvas>
+                        </div>div>
+                        <div id='empty-results'>Sem dados.</div>div>
+                </section>section>
+            </section>main>
+    <script type='module' src='main.js'></script>
+    </main>body>
+</body>html></h1></h1></label>
